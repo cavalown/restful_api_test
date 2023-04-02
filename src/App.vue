@@ -1,32 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <ul class="nav nav-underline border ps-2">
+      <li class="nav-item">
+        <router-link
+          to="/"
+          class="text-decoration-none text-info-emphasis fs-4"
+        >
+          Todos </router-link
+        >|
+      </li>
+      <li class="nav-item">
+        <router-link
+          to="/todos-done"
+          class="text-decoration-none text-info-emphasis fs-4"
+        >
+          Done </router-link
+        >|
+      </li>
+      <li class="nav-item">
+        <router-link
+          to="/todos-left"
+          class="text-decoration-none text-info-emphasis fs-4"
+        >
+          Left
+        </router-link>
+      </li>
+    </ul>
+
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="scss">
+@import "./assets/all.scss";
 </style>
