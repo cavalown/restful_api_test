@@ -14,3 +14,6 @@ Use different frameworks to write CRUD restful api.
 - NestJS
 - Flask
 - Koa
+
+
+This project focus on every framework's logic, so fetch no any api.
